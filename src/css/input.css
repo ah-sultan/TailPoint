@@ -1,0 +1,23 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@layer components {
+    .body{
+        margin-top: 30px;
+    }
+    .box {
+        width: 100%;
+        background: #ddd;
+        padding:10px 10px;
+        border: 1px solid #aaaaaa;
+    }
+
+    .box > * {
+        font-size: 16px;
+        line-height: 1;
+
+       
+    }
+}
