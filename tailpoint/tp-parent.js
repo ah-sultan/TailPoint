@@ -6,6 +6,7 @@
     "--tp-gx" : `${initialGap}rem`,
     width : "100%",
     display : "flex",
+    flexWrap : "wrap",
     columnGap : "var(--tp-gx)"
  }
  
