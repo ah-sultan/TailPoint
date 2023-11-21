@@ -27,3 +27,8 @@ sectionBuilder({
     targetClass : "tp--col-1",
     length: 12,
 })
+
+
+const getMedia = window.MediaQueryList
+
+console.log(getMedia(media))

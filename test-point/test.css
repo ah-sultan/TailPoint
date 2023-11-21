@@ -1,0 +1,49 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+}
+
+.container {
+  width: 1170px;
+  margin: 0 auto;
+  padding-top: 20px;
+  background: #eedcdc;
+}
+
+.box {
+  background: aqua;
+  font-size: 16px;
+  padding: 10px 5px;
+  border-radius: 4px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
+}
+
+/* ----------------------------------------
+    Main Work Start 
+ -------------------------- */
+.tp-wrapper {
+  --tp-gap-x: 16px;
+  padding-top: 10px;
+  background: rgb(219, 241, 180);
+}
+
+.tp--row {
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: var(--tp-gap-x);
+}
+
+.tp--row > * {
+  flex: 0 0 auto;
+}
+
+.tp--col-1{
+  --add-width : calc(var(--tp-gap-x) / 12);
+    flex-basis: calc((100% / 12) - var(--tp-gap-x) + var(--add-width));
+ }
+

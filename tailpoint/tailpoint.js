@@ -1,11 +1,17 @@
-import { tpParent } from "./tp-parent";
-import { tpChildren } from "./tp-children";
-module.exports = function ({ addComponents }) {
+import { tpColumn1 } from "./column/tpColumn1";
+
+module.exports = function ({ addComponents, addUtilities }) {
     const newComponents = {
-      ".tp--row" : tpParent.tpRow,
-      ...tpChildren.tpCol
+        ...tpColumn1
     }
+
+    // const newUtilities = {
+    //   ...tpParent.tpGapX,
+    //   ...tpParent.tpGapY,
+    //   ...tpParent.tpGap
+    // }
   
 
     addComponents(newComponents, ['responsive']);
+    // addUtilities(newUtilities, ["responsive"])
   };
